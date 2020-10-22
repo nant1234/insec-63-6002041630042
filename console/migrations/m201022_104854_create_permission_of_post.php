@@ -16,6 +16,7 @@ class m201022_104854_create_permission_of_post extends Migration
         $create = $auth->createPermission('post-create');
         $create->description = 'Create a post';
         $auth->add($create);
+        
         $index = $auth->createPermission('post-index');
         $index->description = 'List a post';
         $auth->add($index);
